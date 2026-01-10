@@ -8,6 +8,7 @@ import Browsers from "./assets/Browsers.svg";
 import Certificate from "./assets/Certificate.svg";
 import User from "./assets/User.svg";
 import VideoConference from "./assets/VideoConference.svg";
+import Banner from "./assets/banner.png";
 import ProfileImg from "./assets/my profile.png";
 import resumePath from "./assets/Asimiyu Abdulmaleek Ayomide Dev CV.pdf";
 // eslint-disable-next-line no-unused-vars
@@ -271,7 +272,8 @@ function App() {
 
           <div className="profile-header relative">
             <motion.div
-              className=" w-full h-60 bg-cover bg-center rounded-xl bg-[url('\src/assets/banner.png')] "
+              className=" w-full h-60 bg-cover bg-center rounded-xl " 
+              style={{backgroundImage: `url(${Banner})`}}
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.55, ease: "easeOut" }}
