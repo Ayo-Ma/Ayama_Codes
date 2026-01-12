@@ -137,7 +137,7 @@ function App() {
         initial="hidden"
         animate="show"
         variants={pageVariants}
-        className="mx-auto px-4 sm:px-4 md:px-8 lg:px-24 text-slate-800"
+        className="mx-auto px-6 sm:px-6 md:px-8 lg:px-24 text-slate-800"
       >
         <header>
           <nav className="flex items-center justify-between py-10 relative">
