@@ -1,34 +1,40 @@
 [{
-    "title": "Project Title",
+    "slug": "project-1",
+    "title": "Project Title1",
     "description": "Brief description of the project highlighting key features and technologies used.",
     "ProjectImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
     "ProjectLink": "#"
 }, {
-    "title": "Project Title",
+    "slug": "project-2",
+    "title": "Project Title2",
     "description": "Brief description of the project highlighting key features and technologies used.",
     "ProjectImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
     "ProjectLink": "#"
 },
 {
-    "title": "Project Title",
+    "slug": "project-3",
+    "title": "Project Title3",
     "description": "Brief description of the project highlighting key features and technologies used.",
     "ProjectImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
     "ProjectLink": "#"
 },
 {
-    "title": "Project Title",
+    "slug": "project-4",
+    "title": "Project Title4",
     "description": "Brief description of the project highlighting key features and technologies used.",
     "ProjectImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
     "ProjectLink": "#"
 },
 {
-    "title": "Project Title",
+    "slug": "project-5",
+    "title": "Project Title5",
     "description": "Brief description of the project highlighting key features and technologies used.",
     "ProjectImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
     "ProjectLink": "#"
 },
 {
-    "title": "Project Title",
+    "slug": "project-6",
+    "title": "Project Title6",
     "description": "Brief description of the project highlighting key features and technologies used.",
     "ProjectImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
     "ProjectLink": "#"
