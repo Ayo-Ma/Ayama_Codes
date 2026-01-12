@@ -445,7 +445,7 @@ const Home = () => {
             </p>
 
             <motion.div
-              className="w-full flex justify-center items-center relative h-[25rem]"
+              className="w-full flex justify-center items-center relative h-100"
               initial={{ opacity: 0, y: 8 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.35 }}
