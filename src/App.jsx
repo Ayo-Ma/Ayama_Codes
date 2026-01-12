@@ -153,7 +153,7 @@ function App() {
             <ul
               className="
                 flex items-center
-                space-x-6 lg:space-x-4
+                space-x-2 lg:space-x-4
 
                 fixed
                 bottom-6 left-1/2 -translate-x-1/2
