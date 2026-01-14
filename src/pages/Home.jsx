@@ -11,6 +11,8 @@ import User from "../assets/User.svg";
 import VideoConference from "../assets/VideoConference.svg";
 import Banner from "../assets/banner.png";
 import ProfileImg from "../assets/my profile.png";
+import FirstImage from "../assets/profile 2.jpeg";
+import SecondImage from "../assets/profile 12.jpeg";
 import resumePath from "../assets/Asimiyu Abdulmaleek Ayomide Dev CV.pdf";
 // eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from "framer-motion";
@@ -42,7 +44,7 @@ const Home = () => {
     fetchProjects();
   }, []);
 
-  // ✅ Auto-active on scroll (IntersectionObserver)
+
   useEffect(() => {
     let observer;
     const visibilityMap = new Map();
@@ -50,14 +52,14 @@ const Home = () => {
     const createObserver = () => {
       observer = new IntersectionObserver(
         (entries) => {
-          // update visibility for only the entries that changed
+         
           entries.forEach((entry) => {
             visibilityMap.set(entry.target.id, entry.intersectionRatio);
           });
 
           if (isNavClickRef.current) return;
 
-          // pick the most visible section from ALL tracked sections
+ 
           let bestId = activeSection;
           let bestRatio = -1;
 
@@ -101,7 +103,7 @@ const Home = () => {
     };
   }, [navItems]);
 
-  // ---- Animations (simple + clean) ----
+
   const pageVariants = {
     hidden: { opacity: 0, y: 10 },
     show: {
@@ -182,7 +184,7 @@ const Home = () => {
                       id={`nav-${item.id}`}
                       aria-current={isActive ? "page" : undefined}
                       onClick={() => {
-                        // lock observer updates during anchor jump
+             
                         isNavClickRef.current = true;
                         setActiveSection(item.id);
 
@@ -190,7 +192,7 @@ const Home = () => {
                           clearTimeout(navClickTimeoutRef.current);
                         navClickTimeoutRef.current = setTimeout(() => {
                           isNavClickRef.current = false;
-                        }, 800); // enough time for anchor scroll to settle
+                        }, 800); 
                       }}
                       className="
                         group relative
@@ -208,7 +210,7 @@ const Home = () => {
                         focus-visible:ring-blue-200/70
                       "
                     >
-                      {/* ✅ Sliding pill background */}
+        
                       <AnimatePresence>
                         {isActive && (
                           <motion.span
@@ -226,12 +228,12 @@ const Home = () => {
                         )}
                       </AnimatePresence>
 
-                      {/* Content on top of pill */}
+              
                       <span className="relative z-10 hidden lg:block font-medium">
                         {item.label}
                       </span>
 
-                      {/* ✅ Mobile-only icon highlight */}
+                 
                       <img
                         src={item.icon}
                         alt=""
@@ -257,7 +259,8 @@ const Home = () => {
                 lg:inline-block
                 border border-blue-100
                 transition-all duration-300
-                hover:bg-blue-200 hover:text-blue-700
+                hover:bg-blue-100.5 
+                hover:-translate-y-px 
                 active:scale-[0.98]
                 focus:outline-none
                 focus-visible:ring-4 focus-visible:ring-blue-200/70
@@ -266,7 +269,7 @@ const Home = () => {
               whileTap={{ scale: 0.98 }}
               transition={{ type: "spring", stiffness: 350, damping: 22 }}
             >
-              Resume
+              Resume   <span className="transform -rotate-45 font-bold inline-block text-xl ">→</span>
               <span></span>
             </motion.a>
           </nav>
@@ -322,7 +325,7 @@ const Home = () => {
         </header>
 
         <main className="mt-28">
-          {/* hero */}
+        
           <section className="hero-section overflow-hidden">
             <motion.div
               className="max-w-3xl"
@@ -411,7 +414,7 @@ const Home = () => {
             </motion.div>
           </section>
 
-          {/* About - reveal on scroll */}
+         
           <motion.section
             className="about-me mt-24"
             id="about"
@@ -452,7 +455,7 @@ const Home = () => {
               transition={{ duration: 0.6 }}
             >
               <div className="relative w-80 h-80">
-                {/* Left circle (primary/profile) */}
+          
                 <motion.div
                   className="absolute inset-0 rounded-full overflow-hidden border-8 border-white shadow-lg -translate-x-5"
                   initial={{ x: -12, rotate: -6, scale: 0.98 }}
@@ -471,14 +474,14 @@ const Home = () => {
                   }}
                 >
                   <img
-                    src={ProfileImg}
+                    src={SecondImage}
                     alt="Profile - coding"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-slate-900/25 to-transparent mix-blend-overlay" />
                 </motion.div>
 
-                {/* Right circle (hobby/activity) */}
+              
                 <motion.div
                   className="absolute inset-0 rounded-full overflow-hidden border-8 border-blue-200 shadow-lg translate-x-5"
                   initial={{ x: 12, rotate: 6, scale: 0.98 }}
@@ -496,14 +499,14 @@ const Home = () => {
                   }}
                 >
                   <img
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80"
+                    src={FirstImage}
                     alt="Hobby / interest"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-slate-900/20 to-transparent mix-blend-overlay" />
                 </motion.div>
 
-                {/* Decorative animated ring */}
+                
                 <motion.div
                   className="absolute -inset-1 rounded-full pointer-events-none"
                   initial={{ opacity: 0 }}
@@ -545,7 +548,7 @@ const Home = () => {
             </motion.div>
           </motion.section>
 
-          {/* Works - reveal + subtle card micro interaction */}
+         
           <motion.section
             className="selected-projects mt-24 mb-20"
             id="works"
@@ -608,7 +611,7 @@ const Home = () => {
             </Link>
           </motion.section>
 
-          {/* Experience - reveal */}
+          
           <motion.section
             className="experience mt-24 mb-20"
             id="experience"
@@ -651,7 +654,6 @@ const Home = () => {
         </main>
       </motion.div>
 
-      {/* Skills - reveal (no pure black) */}
       <motion.section
         className="skills-tools bg-zinc-900 py-12 mt-20 px-10 md:px-20"
         id="skills"
@@ -663,7 +665,7 @@ const Home = () => {
         <SkillSection />
       </motion.section>
 
-      {/* Contact - reveal */}
+
       <motion.section
         className="contact mt-24 mb-12 container mx-auto px-4 sm:px-4 md:px-8 lg:px-24"
         id="contact"

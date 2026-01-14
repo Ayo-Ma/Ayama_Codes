@@ -1,86 +1,93 @@
 [
   {
-    "slug": "project-1",
-    "title": "Project Title1",
-    "description": "Brief description of the project highlighting key features and technologies used.",
-    "ProjectImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
-    "tags": ["React", "Tailwind", "UX"],
-    "role": "Frontend + UI",
-    "stack": ["React", "Tailwind", "Framer Motion"],
-    "timeline": "2 weeks",
-    "problem": "…",
-    "solution": "…",
-    "solutionPoints": ["…", "…"],
-    "results": ["…", "…"]
+    "slug": "alberto-watches",
+    "title": "Alberto Watches — E-commerce & Brand Website",
+    "description": "A premium e-commerce and brand website built to improve Alberto Watches’ online visibility, product discovery, and customer trust through a clean UI, structured content, and performance-focused frontend architecture.",
+    "ProjectImage": "/alberto_web_reference.png",
+    "tags": ["E-commerce", "UI/UX", "Performance", "Brand Website"],
+    "role": "Frontend Engineer & UI Designer",
+    "stack": [
+      "React",
+      "React Router",
+      "CSS Architecture",
+      "Framer Motion",
+      "JSON Data Modeling"
+    ],
+    "timeline": "3 weeks",
+    "problem": "Alberto Watches had little to no structured online presence. Customers could not easily explore product categories, understand product features, or trust the brand digitally. The lack of a modern website limited brand visibility, discoverability, and customer confidence, especially for premium and luxury watch buyers.",
+    "solution": "I designed and built a modern, high-end e-commerce website that presents Alberto Watches as a premium brand online. The solution focused on clear product categorization, strong visual hierarchy, fast navigation, and trust-building UI patterns such as detailed product pages, breadcrumbs, store locator, policies, and search functionality.",
+    "solutionPoints": [
+      "Designed a clean, premium UI aligned with luxury watch branding",
+      "Built structured product categories (Luxury, Vintage, Sports, Smart) for easy discovery",
+      "Implemented dynamic routing for scalable product and case-study pages",
+      "Added search, breadcrumbs, and store locator to improve navigation and UX",
+      "Used skeleton loading and smooth transitions to eliminate layout jumps",
+      "Optimized layout and interactions for performance and responsiveness"
+    ],
+    "results": [
+      "Established a strong online presence for the Alberto Watches brand",
+      "Improved product discoverability and category clarity",
+      "Created a scalable frontend structure for future products and content",
+      "Delivered a premium, trust-focused user experience suitable for luxury buyers"
+    ],
+    "projectLink": "https://alberto-watch-iota.vercel.app/"
   },
   {
-    "slug": "project-2",
-    "title": "Project Title2",
-    "description": "Brief description of the project highlighting key features and technologies used.",
-    "ProjectImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
-    "tags": ["React", "Tailwind", "UX"],
-    "role": "Frontend + UI",
-    "stack": ["React", "Tailwind", "Framer Motion"],
-    "timeline": "2 weeks",
-    "problem": "…",
-    "solution": "…",
-    "solutionPoints": ["…", "…"],
-    "results": ["…", "…"]
+    "slug": "polio-crm-landing-page",
+    "title": "Polio CRM — SaaS Landing Page",
+    "description": "A conversion-focused SaaS landing page designed to position Polio as a flexible, AI-powered CRM while clearly communicating value, features, integrations, and social proof to drive free-trial signups.",
+    "ProjectImage": "/polio_landing_reference.png",
+    "tags": ["SaaS", "Landing Page", "UI/UX", "Conversion Design"],
+    "role": "Frontend Engineer & UI Designer",
+    "stack": [
+      "React",
+      "CSS Architecture",
+      "Component-Based Design",
+      "Responsive Layouts"
+    ],
+    "timeline": "1–2 weeks",
+    "problem": "Polio needed a clear, modern landing page that could communicate a complex CRM product in a simple, compelling way. The challenge was presenting flexibility, AI-driven features, analytics, integrations, and trust signals without overwhelming users or hurting conversion.",
+    "solution": "I designed and built a structured SaaS landing page that prioritizes clarity, scannability, and conversion. The page introduces Polio’s core value proposition upfront, reinforces trust through testimonials and integrations, and guides users toward starting a free trial using clear CTAs and progressive information hierarchy.",
+    "solutionPoints": [
+      "Crafted a strong hero section with a clear value proposition and primary CTAs",
+      "Structured feature sections to explain complex CRM capabilities in simple language",
+      "Designed a scalable feature grid highlighting performance, security, and customization",
+      "Added integrations and social proof to build trust with enterprise-level users",
+      "Included testimonials from recognizable brands to reinforce credibility",
+      "Designed FAQ and footer sections to reduce friction before signup"
+    ],
+    "results": [
+      "Clear positioning of Polio as a flexible, AI-powered CRM",
+      "Improved clarity around product features and integrations",
+      "Strong conversion-focused layout with multiple free-trial entry points",
+      "Reusable layout structure suitable for future SaaS marketing pages"
+    ],
+    "projectLink": "https://polio-landing-page.vercel.app/"
   },
   {
-    "slug": "project-3",
-    "title": "Project Title3",
-    "description": "Brief description of the project highlighting key features and technologies used.",
-    "ProjectImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
-    "tags": ["React", "Tailwind", "UX"],
-    "role": "Frontend + UI",
-    "stack": ["React", "Tailwind", "Framer Motion"],
-    "timeline": "2 weeks",
-    "problem": "…",
-    "solution": "…",
-    "solutionPoints": ["…", "…"],
-    "results": ["…", "…"]
-  },
-  {
-    "slug": "project-4",
-    "title": "Project Title4",
-    "description": "Brief description of the project highlighting key features and technologies used.",
-    "ProjectImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
-    "tags": ["React", "Tailwind", "UX"],
-    "role": "Frontend + UI",
-    "stack": ["React", "Tailwind", "Framer Motion"],
-    "timeline": "2 weeks",
-    "problem": "…",
-    "solution": "…",
-    "solutionPoints": ["…", "…"],
-    "results": ["…", "…"]
-  },
-  {
-    "slug": "project-5",
-    "title": "Project Title5",
-    "description": "Brief description of the project highlighting key features and technologies used.",
-    "ProjectImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
-    "tags": ["React", "Tailwind", "UX"],
-    "role": "Frontend + UI",
-    "stack": ["React", "Tailwind", "Framer Motion"],
-    "timeline": "2 weeks",
-    "problem": "…",
-    "solution": "…",
-    "solutionPoints": ["…", "…"],
-    "results": ["…", "…"]
-  },
-  {
-    "slug": "project-6",
-    "title": "Project Title6",
-    "description": "Brief description of the project highlighting key features and technologies used.",
-    "ProjectImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
-    "tags": ["React", "Tailwind", "UX"],
-    "role": "Frontend + UI",
-    "stack": ["React", "Tailwind", "Framer Motion"],
-    "timeline": "2 weeks",
-    "problem": "…",
-    "solution": "…",
-    "solutionPoints": ["…", "…"],
-    "results": ["…", "…"]
+    "slug": "student-progress-tracker",
+    "title": "Student Progress Tracker",
+    "description": "A lightweight web application for tracking student enrollment, course progress, and completion status, designed to help instructors and small training centers manage learners efficiently without complex LMS tools.",
+    "ProjectImage": "/student_progress_tracker_reference.png",
+    "tags": ["Education", "Dashboard", "Data Tracking", "UI/UX"],
+    "role": "Frontend Developer & UI Designer",
+    "stack": ["HTML", "Tailwind CSS", "JavaScript (ES6+)"],
+    "timeline": "1 week",
+    "problem": "Many small training centers, tutors, and bootcamps rely on spreadsheets or manual notes to track student progress. This leads to poor visibility into learner status, errors in record keeping, and difficulty measuring completion rates or engagement.",
+    "solution": "I built a simple, focused student progress tracker that allows instructors to add students, assign courses, update progress status, and instantly view completion metrics. The interface is intentionally minimal to reduce friction and make daily tracking fast and intuitive.",
+    "solutionPoints": [
+      "Designed a clean dashboard showing total students, completed, in-progress, and completion rate",
+      "Implemented student creation with course and progress status assignment",
+      "Built a filterable student list for quick course-based tracking",
+      "Used Tailwind CSS for rapid styling and consistent UI patterns",
+      "Structured the app for clarity and ease of use rather than feature overload"
+    ],
+    "results": [
+      "Improved visibility into student progress at a glance",
+      "Eliminated the need for manual spreadsheets for small class tracking",
+      "Created a reusable foundation for a lightweight LMS or admin dashboard",
+      "Demonstrated practical problem-solving using vanilla JavaScript and modern CSS"
+    ],
+    "projectLink": "https://student-management-app-indol.vercel.app/"
   }
 ]

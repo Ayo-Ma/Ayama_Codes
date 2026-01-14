@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 /* eslint-disable no-unused-vars */
 import { useParams, Link } from "react-router-dom";
-import projects from "../../public/projectDetails.json";
+
 import { motion } from "framer-motion";
 
 export default function ProjectCaseStudy() {
@@ -64,7 +64,7 @@ export default function ProjectCaseStudy() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-24 py-10">
-        {/* Sticky back button (UX win) */}
+       
         <div className="sticky top-4 z-40">
           <Link
             to="/projects"
@@ -83,7 +83,7 @@ export default function ProjectCaseStudy() {
           </Link>
         </div>
 
-        {/* Hero */}
+   
         <motion.header
           initial="hidden"
           animate="show"
@@ -104,7 +104,7 @@ export default function ProjectCaseStudy() {
             {project.description}
           </p>
 
-          {/* Quick meta chips */}
+         
           <div className="mt-6 flex flex-wrap gap-2">
             <span className="rounded-full bg-white border border-slate-200 px-4 py-2 text-sm text-slate-600">
               <span className="text-slate-500">Role:</span>{" "}
@@ -122,7 +122,7 @@ export default function ProjectCaseStudy() {
           </div>
         </motion.header>
 
-        {/* Cover image */}
+        
         <motion.section
           variants={section}
           initial="hidden"
@@ -138,7 +138,7 @@ export default function ProjectCaseStudy() {
                 className="w-full max-h-[520px] object-cover"
                 loading="lazy"
               />
-              {/* Subtle overlay for polish */}
+             
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-900/15 via-transparent to-transparent" />
             </div>
 
@@ -162,9 +162,9 @@ export default function ProjectCaseStudy() {
           </div>
         </motion.section>
 
-        {/* Content sections */}
+       
         <div className="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-10">
-          {/* Left: narrative */}
+        
           <div className="lg:col-span-2 space-y-10">
             <motion.section
               variants={section}
@@ -231,7 +231,7 @@ export default function ProjectCaseStudy() {
             </motion.section>
           </div>
 
-          {/* Right: sidebar */}
+          
           <div className="space-y-6">
             <motion.aside
               variants={section}
@@ -266,6 +266,14 @@ export default function ProjectCaseStudy() {
                     Timeline
                   </p>
                   <p className="text-slate-600">{timeline}</p>
+                </div>
+                <div>
+                  <p className="text-xs uppercase tracking-wide text-slate-500">
+                    View live
+                  </p>
+                  <a className="text-blue-500 text-sm flex items-center transition transform hover:translate-y-1 hover:text-blue-600  " href={project.projectLink} target="_blank" rel="noopener noreferrer">{project.title}
+              →
+                  </a>
                 </div>
               </div>
             </motion.aside>
