@@ -6,7 +6,7 @@ const SkillSection = () => {
     <>
     
       <SectionHeading heading="Skills & Tools" />
-      <section className="flex flex-col gap-12">
+      <section className="flex lg:flex-wrap lg:flex-row flex-col gap-12 m-auto justify-center">
       
         <SkillCard
           title="Frontend Development"

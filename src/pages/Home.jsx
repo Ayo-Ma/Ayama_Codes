@@ -144,12 +144,12 @@ const Home = () => {
         <header>
           <nav className="flex items-center justify-between py-10 relative">
             <motion.h1
-              className="text-3xl font-bold text-slate-800"
+              className="text-3xl font-bold text-blue-500 hover:text-blue-700 transition-colors duration-300"
               initial={{ opacity: 0, y: -6 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.45, ease: "easeOut" }}
             >
-              Logo
+              AyamaCodes
             </motion.h1>
 
             <ul
@@ -335,7 +335,7 @@ const Home = () => {
               whileHover={{ translateY: -2 }}
             >
               <motion.h2
-                className="text-3xl/normal md:text-4xl lg:text-5xl/normal font-bold mb-4 leading-tight"
+                className="text-3xl/normal  md:text-4xl lg:text-5xl/tight font-bold mb-4 leading-tight"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.05, duration: 0.55 }}
@@ -655,7 +655,7 @@ const Home = () => {
       </motion.div>
 
       <motion.section
-        className="skills-tools bg-zinc-900 py-12 mt-20 px-10 md:px-20"
+        className="skills-tools  bg-zinc-900 py-12 mt-20 px-10 md:px-40"
         id="skills"
         variants={sectionVariants}
         initial="hidden"

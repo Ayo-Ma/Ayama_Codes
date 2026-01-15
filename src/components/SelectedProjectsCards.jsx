@@ -11,7 +11,7 @@ const SelectedProjectsCards = ({ project }) => {
       viewport={{ once: true, amount: 0.25 }}
       transition={{ duration: 0.45, ease: "easeOut" }}
     >
-      {/* Whole card clickable = better UX */}
+  
       <Link
         to={`/projects/${project.slug}`}
         aria-label={`Open case study: ${project.title}`}
@@ -60,7 +60,7 @@ const SelectedProjectsCards = ({ project }) => {
             Case Study
           </span>
 
-          {/* Subtle shine sweep on hover (premium, not noisy) */}
+          
           <span
             aria-hidden="true"
             className="
@@ -82,11 +82,11 @@ const SelectedProjectsCards = ({ project }) => {
             {project.description}
           </p>
 
-          <div className="mt-5 flex items-center justify-between gap-4">
+          <div className="mt-5 flex flex-col-reverse  items-center justify-between gap-4">
           
             <span
               className="
-                inline-flex items-center gap-2
+               inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50/80 px-4 py-2
                 text-blue-500 font-semibold
                 transition-colors
                 group-hover:text-blue-600
@@ -114,7 +114,7 @@ const SelectedProjectsCards = ({ project }) => {
           </div>
         </div>
 
-        {/* Bottom glow line on hover */}
+       
         <div
           className="
             pointer-events-none absolute inset-x-0 bottom-0 h-px
